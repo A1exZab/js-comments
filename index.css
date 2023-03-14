@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-style: inherit;
+	font-weight: 400;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #27272c;
+	color: white;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	margin: 0px auto;
+	max-width: 600px;
+	width: 100%;
+}
+
+.form {
+	height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	padding: 30px 0;
+}
+
+.form__title {
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0px 0px 30px 0px;
+}
+
+.form__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__item {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.form__label {
+	font-size: 18px;
+	display: block;
+	margin: 0px 0px 20px 0px;
+}
+
+.form__input {
+	width: 250px;
+	height: 30px;
+	padding: 0px 15px;
+	border-radius: 5px;
+	font-size: 18px;
+	position: relative;
+}
+
+.input__container {
+	position: relative;
+}
+
+.form__input:focus {
+	outline: 3px solid #6495ed;
+}
+
+textarea.form__input {
+	min-height: 120px;
+	width: 100%;
+	overflow: hidden;
+	resize: none;
+	padding: 20px 15px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.form__button {
+	height: 40px;
+	font-size: 16px;
+	display: block;
+	padding: 10px 20px;
+	border-radius: 30px;
+	transform: all 0.35s ease-in-out;
+	position: relative;
+}
+
+.form__button:active {
+	top: 3px;
+}
+
+.submit-btn {
+	font-weight: 500;
+	color: #27272c;
+	background-color: #6495ed;
+}
+
+.cancel-btn {
+	font-weight: 500;
+	color: white;
+	background-color: transparent;
+}
+
+.cancel-btn:hover {
+	background-color: #8c8c92;
+}
+
+.submit-btn:hover {
+	color: #fff;
+}
+
+.comments {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	border-top: 3px solid #8c8c92;
+	padding: 20px 0;
+}
+
+.comments__title {
+	align-self: start;
+}
+.comments__block {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	border: 2px solid #8c8c92;
+	border-radius: 5px;
+	padding: 20px;
+	gap: 20px;
+	width: 600px;
+	background-color: #27272c;
+}
+
+.block__top {
+	line-height: 20px;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	width: 100%;
+	padding: 0px 15px;
+}
+
+.block__comment-author {
+	display: flex;
+	gap: 10px;
+}
+
+.block__comment-author span {
+	opacity: 0.7;
+}
+
+.block__content {
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.block__text {
+	line-height: 18px;
+}
+
+.block__bottom {
+	height: 30px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0px 20px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.button.like {
+	width: 24px;
+	height: 24px;
+}
+
+.liked {
+	content: url(/img/like.svg);
+}
+
+.unliked {
+	content: url(/img/unlike.svg);
+}
+
+.error {
+	outline: 2px solid #f92f60;
+}
+
+.error__label {
+	font-size: 12px;
+	position: absolute;
+	color: #f92f60;
+	left: 0;
+	top: 0;
+	margin-top: 10px;
+}
+
+.error__label::before {
+	content: '❌';
+	margin-right: 2px;
+}

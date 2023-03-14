@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Comments JS</title>
+		<link rel="stylesheet" href="/index.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<div class="container">
+					<div class="form">
+						<form action="#" id="form" class="form__body">
+							<h1 class="form__title">Оставить комментарий</h1>
+							<div class="form__top">
+								<div class="form__item">
+									<label for="formName" class="form__label">Имя*:</label>
+									<div class="input__container">
+										<input
+											placeholder="Введите имя"
+											data-required="true"
+											type="text"
+											id="formName"
+											name="userName"
+											class="form__input"
+										/>
+									</div>
+								</div>
+
+								<div class="form__item">
+									<label for="formDate" class="form__label">Дата добавления:</label>
+
+									<div class="input__container">
+										<input class="form__input" id="formDate" type="date" min="2000-01-01" />
+									</div>
+								</div>
+							</div>
+
+							<div class="form__item">
+								<label for="formMessage" class="form__label">Комментарий*:</label>
+								<div class="input__container">
+									<textarea
+										data-required="true"
+										placeholder="Введите текст комментария"
+										name="comment"
+										id="formMessage"
+										class="form__input"
+									></textarea>
+								</div>
+							</div>
+
+							<div class="buttons">
+								<button type="submit" class="form__button submit-btn">Оставить комментарий</button>
+								<button type="button" class="form__button cancel-btn">Отмена</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="comments">
+					<h1 class="comments__title">Комментарии</h1>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
