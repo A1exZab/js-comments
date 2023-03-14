@@ -280,11 +280,11 @@ textarea.form__input {
 }
 
 .liked {
-	content: url(/img/like.svg);
+	content: url(img/like.svg);
 }
 
 .unliked {
-	content: url(/img/unlike.svg);
+	content: url(img/unlike.svg);
 }
 
 .error {

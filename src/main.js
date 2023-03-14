@@ -89,7 +89,7 @@ function addComment(name, text, date) {
 				<span>·</span>
 				<div class="block__date">${fullDate}</div>
 			</div>
-			<div class="button delete"><img src="/img/trash.svg" id='delete' alt="delete" /></div>
+			<div class="button delete"><img src="img/trash.svg" id='delete' alt="delete" /></div>
 		</div>
 		<div class="block__content">
 			<div class="block__text">
